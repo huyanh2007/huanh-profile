@@ -253,59 +253,32 @@
 
 
 
-/* TABLET */
-@media (max-width: 1024px) {
-
-    .image-profile img {
-        width: 230px;
-        height: 230px;
-    }
-
-    .name-profile h1 {
-        font-size: 38px;
-    }
-
-}
-
-
-/* MOBILE */
 @media (max-width: 768px) {
 
-    .head-profile-container {
-        flex-direction: column;
-    }
-
+    /* Ảnh profile */
     .image-profile img {
-        width: 180px;
-        height: 180px;
+        width: min(297px, 80vw);
+        height: auto;
+        aspect-ratio: 297 / 298;
     }
 
-    .name-profile h1 {
-        font-size: 32px;
+    /* Ảnh thành tích nằm ngang */
+    .horizental-image-achievements-certificates img {
+        width: min(450px, 100%);
+        height: auto;
+        aspect-ratio: 450 / 300;
+        object-fit: contain;
     }
 
-}
-
-
-/* ĐIỆN THOẠI RẤT NHỎ */
-@media (max-width: 400px) {
-
-    .image-profile img {
-        width: 150px;
-        height: 150px;
+    /* Ảnh thành tích dọc */
+    .vertical-image-achievements-certificates {
+        padding: 10px;
     }
 
-    .name-profile h1 {
-        font-size: 27px;
+    .vertical-image-achievements-certificates img {
+        width: min(250px, 80vw) !important;
+        height: auto !important;
+        aspect-ratio: 250 / 400;
+        object-fit: contain;
     }
-
-    .name-profile p {
-        font-size: 18px;
-    }
-
-    .name-profile p1,
-    .name-profile a {
-        font-size: 14px;
-    }
-
 }
