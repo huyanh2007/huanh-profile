@@ -258,6 +258,13 @@
 /* ============================= */
 
 @media (max-width: 768px) {
+    .image-profile img {
+    width: 197px;          /* Chiều rộng của ảnh */
+    height: 198px;         /* Chiều cao của ảnh */
+    border-radius: 5%;    /*Bo góc ảnh */
+    object-fit: cover;     /* Giúp ảnh không bị méo */
+    border: 2px solid #00fadd; /*Màu đường viền ảnh*/
+    }
 
     /* ===== ẢNH NGANG ===== */
     .horizental-image-achievements-certificates {
