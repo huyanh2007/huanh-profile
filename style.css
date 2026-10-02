@@ -208,3 +208,104 @@
     text-align:left;
     margin: 0;
 }
+
+
+/*Hoạt động*/
+.activity{
+    background-color: #00e9c2;
+    padding:10px;
+    color: rgb(0,0,0)
+}
+.activity h1{
+    color: rgb(0, 110, 253);
+    padding:10px;
+    font-size:28px;
+    text-align:center;
+    margin: 0;
+}
+.activity p{
+    padding:10px;
+    color: rgb(0, 0, 0);
+    font-size:18px;
+    text-align:left;
+    margin: 0;
+}
+
+
+/*Ảnh ngang*/
+.horizental-image-achievements-certificates{
+    background-color: #00e9c2;
+    padding:10px 70px;
+    margin:0;
+}
+.horizental-image-achievements-certificates img{
+    width:450px;
+    height:300px;
+}
+
+/*Ảnh dọc*/
+.vertical-image-achievements-certificates{
+    background-color: #00e9c2;
+    padding:10px 70px;
+    margin:0;
+    padding: 10px 150px;
+}
+
+
+
+/* TABLET */
+@media (max-width: 1024px) {
+
+    .image-profile img {
+        width: 230px;
+        height: 230px;
+    }
+
+    .name-profile h1 {
+        font-size: 38px;
+    }
+
+}
+
+
+/* MOBILE */
+@media (max-width: 768px) {
+
+    .head-profile-container {
+        flex-direction: column;
+    }
+
+    .image-profile img {
+        width: 180px;
+        height: 180px;
+    }
+
+    .name-profile h1 {
+        font-size: 32px;
+    }
+
+}
+
+
+/* ĐIỆN THOẠI RẤT NHỎ */
+@media (max-width: 400px) {
+
+    .image-profile img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .name-profile h1 {
+        font-size: 27px;
+    }
+
+    .name-profile p {
+        font-size: 18px;
+    }
+
+    .name-profile p1,
+    .name-profile a {
+        font-size: 14px;
+    }
+
+}
