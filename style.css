@@ -258,13 +258,40 @@
 /* ============================= */
 
 @media (max-width: 768px) {
-.image-profile img{
-        width: 100%;
-        max-width: 450px;
-        height: auto;
-        display: block;
-        margin: 10px auto;
-        box-sizing: border-box;
+    .image-profile img{
+            width: 100%;
+            max-width: 450px;
+            height: auto;
+            display: block;
+            margin: 10px auto;
+            box-sizing: border-box;
+        }
+    .name-profile h1 {
+        display:block;
+        margin:auto;
+        font-size: 48px;
+        color: rgba(154, 0, 197, 0.864);       
+        }
+
+    .name-profile p {
+        display:block;
+        margin:auto;
+        font-size: 28px;
+        color:rgb(0, 249, 253);
+        text-decoration: underline;
+    }
+    .name-profile p1{
+        display:block;
+        margin:auto;
+        font-size: 18px;
+        color:rgb(255, 255, 255);
+    }
+    .name-profile a{
+        display:block;
+        margin:auto;
+        font-size: 18px;
+        text-decoration: none;
+        color:rgb(255, 255, 255);
     }
 
     /* ===== ẢNH NGANG ===== */
