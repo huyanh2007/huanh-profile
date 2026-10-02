@@ -258,40 +258,70 @@
 /* ============================= */
 
 @media (max-width: 768px) {
-    .image-profile img{
-            width: 100%;
-            max-width: 450px;
-            height: auto;
-            display: block;
-            margin: 10px auto;
-            box-sizing: border-box;
-        }
-    .name-profile h1 {
-        display:block;
-        margin:auto;
-        font-size: 48px;
-        color: rgba(154, 0, 197, 0.864);       
-        }
+    .head-profile-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 12px;
+        padding: 12px;
+        box-sizing: border-box;
+        width: 100%;
+        overflow: hidden;
+    }
 
+    /* Giảm avatar khoảng 30-40% */
+    .image-profile {
+        flex: 0 0 38%;
+        max-width: 38%;
+    }
+
+    .image-profile img {
+        width: 100%;
+        height: auto;
+        max-width: 210px;
+        aspect-ratio: 1 / 1;
+        object-fit: cover;
+        box-sizing: border-box;
+    }
+
+    /* Cho phần thông tin sử dụng toàn bộ chỗ còn lại */
+    .name-profile {
+        flex: 1;
+        min-width: 0;
+        width: auto;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+
+    /* Tên */
+    .name-profile h1 {
+        font-size: clamp(28px, 8vw, 40px);
+        line-height: 1.05;
+        margin: 0 0 10px 0;
+        overflow-wrap: break-word;
+    }
+
+    /* Cybersecurity Specialist */
     .name-profile p {
-        display:block;
-        margin:auto;
-        font-size: 28px;
-        color:rgb(0, 249, 253);
-        text-decoration: underline;
+        font-size: clamp(18px, 5vw, 26px);
+        line-height: 1.15;
+        margin: 5px 0 12px 0;
+        overflow-wrap: break-word;
     }
-    .name-profile p1{
-        display:block;
-        margin:auto;
-        font-size: 18px;
-        color:rgb(255, 255, 255);
+
+    /* Thông tin cá nhân */
+    .name-profile p1 {
+        display: block;
+        font-size: 16px;
+        line-height: 1.35;
+        overflow-wrap: anywhere;
+        word-break: break-word;
     }
-    .name-profile a{
-        display:block;
-        margin:auto;
-        font-size: 18px;
-        text-decoration: none;
-        color:rgb(255, 255, 255);
+
+    .name-profile a {
+        font-size: 16px;
+        overflow-wrap: anywhere;
+        word-break: break-word;
     }
 
     /* ===== ẢNH NGANG ===== */
