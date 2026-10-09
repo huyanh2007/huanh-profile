@@ -17,7 +17,7 @@
 .image-profile img {
   width: 297px;          /* Chiều rộng của ảnh */
   height: 298px;         /* Chiều cao của ảnh */
-  border-radius: 5%;    /*Bo góc ảnh */
+  border-radius: 10%;    /*Bo góc ảnh */
   object-fit: cover;     /* Giúp ảnh không bị méo */
   border: 2px solid #00fadd; /*Màu đường viền ảnh*/
 }
